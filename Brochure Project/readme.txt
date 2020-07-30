@@ -1,1 +1,1 @@
-This project is based off of Amazon and other E-commerce websites and is designed with HTML CSS and Javascript. It also simulates a shopping cart and payments functionalities. 
+This project is a brochure website that details the history, ideology, business, and rising artists of SM Entertainment. This website takes advantage of flexbox and grid to align elements and media queries for added responsiveness. 
