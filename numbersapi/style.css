@@ -1,0 +1,36 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color:#333;
+    font-family: sans-serif;
+}
+.number-box {
+    width:400px;
+    background-color:blue;
+    padding:10px 20px;
+    border-radius:10px;
+}
+.number-box h1 {
+    margin-bottom:10px;
+    font-size:36px;
+    color:white;
+}
+.number-box div {
+    margin-bottom: 20px;
+    color:white;
+}
+.number-box input {
+    padding:10px;
+    font-size:20px;
+    width:350px;
+}
+#number-fact {
+    font-family:sans-serif;
+    margin-top:10px;
+}

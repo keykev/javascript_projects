@@ -1,0 +1,18 @@
+body {
+    background-color:#444;
+}
+#bird {
+    display:none;
+}
+#bg {
+    display:none;
+}
+#pipe-south {
+    display:none;
+}
+#pipe-north {
+    display:none;
+}
+#ground {
+    display:none;
+}

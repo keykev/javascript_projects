@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>E-Commerce</title>
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id = "menu-btn"></i>
+            <i class="fa fa-times" id = "close-btn"></i>
+            <a href = "./index.html"><img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/shopping-online.jpg" alt="" class = "logo"></a>
+            <input type="text" class = "form-control">
+            <span class = "input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href = "#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+                <li><a href = "#">Sign up</a></li>
+                <li><a href = "#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+<!------------------------SINGLE PRODUCT-------------------->
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="slider">
+                        <div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100 carousel-image" src="./product/vr.jpg" alt="First slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev btn-prev" href="#product-slider" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            <a class="carousel-control-next btn-next" href="#product-slider" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class = "new-arrival text-center">NEW</p>
+                    <h2 class = "product-title">Virtual Reality Headset</h2>
+                    <p id = "product-id">Product Code:1</p>
+
+                    <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    <p class = "price">USD: <span. class = "actual-price">$199.99</span.></p>
+                    <p><b>Avaiability:</b> In Stock</p>
+                    <p><b>Condition:</b> New</p>
+                    <p><b>Brand: </b>xxx company</p>
+                    <label for = "number">Quantity: 
+                    </label>
+                    <input type = "number" value = "1" class = "product-amt">
+                    <button class = "btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------Product Description---------------------------->
+    <section class = "product-description">
+        <div class="container">
+            <h6>Product Description</h6>
+            <p>(Virtual Reality headset) A head-worn apparatus that completely covers the eyes for an immersive 3D experience. Also called \"VR goggles,\" VR headsets may be entirely self-contained such as the Oculus Rift or the HTC Vive. They are costly and must be tethered to a very robust computer to handle the animation. Considerably less expensive units require the user's smartphone to be strapped onto the device.</p>
+
+            <hr>
+            
+            <div class = "container">
+                <div class="title-box">
+                    <h2>Similar</h2>
+                </div>
+                <div class = "row">
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src = "sale/image-1.jpg">
+                            <div class="overlay-right">
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div> 
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h4>Attack on Titan T-Shirt</h4>
+                            <p>$40.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src = "sale/image-2.jpg">
+                            <div class="overlay-right">
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div> 
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h4>IPhone11</h4>
+                            <p>$599.99</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src = "sale/image-3.jpg">
+                            <div class="overlay-right">
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div> 
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h4>Charmander Keychain</h4>
+                            <p>$0.99</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-top">
+                            <img src = "sale/image-4.jpg">
+                            <div class="overlay-right">
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type = "button" class = "btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div> 
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h4>Fuji Camera</h4>
+                            <p>$199.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--------------------------------------------------CHECKOUT---------------------------------------->
+    <section class = "check-out">
+        <div class = "container">
+            <hr>
+            <div class="row row-categories">
+                <div class="col-md-3">
+                    <h2>Image</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Product</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Quantity</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Price</h2>
+                </div>
+            </div>
+            <div class="items-list">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src = "./product/vr.jpg" class = "cart-list">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Virtual Reality Headset</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class = "item-quantity">1</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class = "item-price"  style = "display:inline; margin-right:50px;">$199.99</h4>
+                            <button type = "button" class = "btn btn-danger">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src = "./product/vr.jpg" class = "cart-list">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Virtual Reality Headset</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class = "item-quantity">1</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class = "item-price" style = "display:inline; margin-right:50px;">$199.99</h4>
+                            <button type = "button" class = "btn btn-danger">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-container">
+                <h3 style = "display:inline;">Total: 0</h3>
+                <button type ="button" class = "btn btn-info">Purchase</button>
+            </div>
+        </div>
+    </section>
+    <!------------------FOOTER------------------->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Useful Links</h1>
+                    <p>Privacy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Careers</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa fa-youtube-play"></i>Youtube</p>
+                    <p><i class="fa fa-facebook-square"></i>Facebook</p>
+                    <p><i class="fa fa-instagram"></i>Instagram</p>
+                    <p><i class="fa fa-twitter"></i>Twitter</p>
+                </div>
+            </div>
+            <hr>
+            <p class ="copyright">&copy; Made By Kevin Yang</p>
+        </div>
+    </section>
+        <script src = "main.js"></script>
+    </body>

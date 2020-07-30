@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;1,300&display=swap');
+
+* {
+  padding:0;
+  margin:0;
+}
+html {
+  scroll-behavior:smooth;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  height:100vh;
+  width:100%; 
+  position:relative;
+}
+
+/**************************navbar**********************/
+#home {
+  background-color:white;
+}
+.nav-header {
+  width:100%;
+}
+#home .section-center {
+  margin-left:10px;
+  display:flex;
+  justify-content:space-between;
+  width:95%;
+  padding-bottom:10px;
+}
+#home .section-center .bars {
+  cursor:pointer;
+  font-size:2rem;
+  border:none;
+  background:transparent;
+  color:black;
+}
+#home .section-center .bars:hover {
+  color:blue;
+}
+#home .links-container {
+  background-color:white;
+  overflow:hidden;
+  height:0;
+  transition: height .5s ease-out;
+}
+.show-height {
+  height:200px;
+}
+.links-container .links {
+  margin-left:20px;
+  list-style-type:none;
+  padding:10px;
+  
+} 
+.links li {
+  padding-top:10px;
+}
+.links .link {
+  text-decoration:none;
+  color:black;
+  font-size:1.5rem;
+  border-bottom:2px solid black;
+}
+
+@media only screen and (min-width:720px) {
+  #home {
+    background-color:transparent;
+  }
+  #home .section-center .bars {
+    display:none;
+    
+  }
+  .nav-header {
+    display:flex;
+  }
+  .links-container {
+    height:auto !important;
+    background-color:transparent !important;
+  }
+  .links {
+    display:flex;
+    margin-right:310px;
+    height: 50px !important;
+    
+  }
+  .link {
+    color:black !important;
+    margin-left:15px;
+  }
+}
+/*****************************Header**************************************/
+.banner {
+  background-image:linear-gradient(to right,rgba(255,255,255,.8), rgba(0,0,0,.5)), url("./Home/snsd.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center top;
+  position:absolute;
+  top:0;
+  z-index:-1;
+  height:100%;
+  width:100%;
+}
+.banner-text {
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  top:200px;  
+  text-align:center;
+  margin-left:10px;
+  border:3px solid black;
+  font-size:1.8rem;
+  width:500px;
+}
+/********************************Introduction***********************************/
+.intro {
+  width:100%;
+  position:relative;
+
+}
+.intro-image {
+  width:100%;
+  z-index:-1;
+}
+.intro-text {
+  position:absolute;
+  top:0;
+  width: 50%;
+  background-color:rgba(46, 28, 28, 0.6);
+  color:white;
+  margin-left:10px;
+  padding:10px;
+  overflow:hidden;
+  height:auto;
+  z-index:1;
+}
+.intro-title {
+  width:1000px;
+  margin:auto;
+  margin-top:20px;
+  position:relative;
+  background-color:white;
+}
+.intro-title p {
+  font-size: 14px;
+}
+.intro-body {
+  display:flex;
+  margin-top:20px;
+  background-color:white;
+}
+.intro-body h2 {
+  font-size:50px;
+  color:pink;
+}
+.intro-body h2 span {
+  font-size:20px;
+}
+.intro-body p:nth-child(1),p:nth-child(2),p:nth-child(3) {
+  text-indent:2rem;
+  line-height:25px;
+  font-size:12px;
+}
+.intro-body .intro-right {
+  margin-left: 20px;
+  padding:20px;
+}
+.transparent-logo {
+  width:400px;
+  height:500px;
+}
+.bottom-line {
+  border-bottom:3px solid black;
+  width:100%;
+}
+.misc {
+  width:1000px;
+  margin:auto;
+}
+table tr td:first-child {
+  background-color:gray;
+}
+table tr td:nth-child(2) {
+  background-color: #d3d3d3;
+}
+@media only screen and (max-width:975px) {
+  body {
+    width:100%;
+    overflow-x:hidden;
+  }
+  .intro-text {
+    width:100%;
+    font-size:10px;
+  }
+  .intro-text p {
+    font-size:10px;
+    margin-bottom:0;
+  }
+  .intro-left {
+    display:none;
+  }
+  .intro-right p {
+    word-wrap:break-word;
+    width:500px;
+  }
+  table {
+    width:500px;
+  }
+  .bottom-line {
+    width:500px;
+  }
+}
+/**************************** BUSINESS************************/
+.header {
+  position:relative;
+}
+.image-studio {
+  width:100%;
+}
+.image-text {
+  position:absolute;
+  top:0;
+  width:200px;
+  background-color:rgba(25,25,25,.5);
+  color:white;
+}
+.music-title {
+  padding:15px;
+}
+.music-title p {
+  border-bottom: 3px solid pink;
+  width:50%;
+}
+.music-elements {
+  display:flex;
+  flex-wrap:wrap;
+}
+.music-elements .element {
+  flex-basis: 32%;
+  margin-left:10px;
+  text-align:center;
+}
+.element-text p {
+  font-size:10px;
+}
+.album-text {
+  padding:15px;
+}
+.album-list {
+  display:flex;
+  flex-wrap:wrap;
+  padding:15px;
+}
+.album {
+  flex-basis:20%;
+  display:flex;
+  flex-direction:column;
+}
+.album p {
+  background-color:#ADD8E6;
+  margin-bottom:5px;
+  border-right:1px solid black;
+  height:50px;
+}
+
+/******************* ARTISTS********************************/
+.artists-header {
+  position:relative;
+}
+.artist-image {
+  width:100%;
+}
+.header-text {
+  position:absolute;
+  top:0;
+  left:0;
+  width:400px;
+  background-color:rgba(25,25,25,.5);
+  color:white;
+  padding:15px;
+}
+.artists-title {
+  padding:15px;
+}
+.artists-body {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap:20px;  
+}
+.artist {
+  position:relative;
+  text-align:center; 
+}
+.artist h2 {
+  position:absolute;
+  top:0;
+  left:40%;
+  display:none;
+}
+.artist img:hover {
+  opacity:.5;
+}
+.artist img:hover + h2 {
+  display:block;
+}
+
+
+@media only screen and (max-width:830px) {
+  .artists-body {
+    grid-template-columns: 1fr;
+  }
+  .header-text {
+    width:500px;
+  }
+}
+
+
+/************************Footer*************************/
+
+footer {
+  position:relative;
+  bottom:0;
+  text-align:center;
+  width:100%;
+  background-color:#444;
+  color:white;
+}
