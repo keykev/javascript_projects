@@ -109,7 +109,6 @@ submitExpenseForm() {
     this.expenseAmount.innerHTML = total;
     return total;
   }
-
   editExpense(element) {
     let id = element.dataset.id;
     let expense = element.parentElement.parentElement.parentElement;
@@ -127,9 +126,9 @@ submitExpenseForm() {
     
     this.itemList = tempList;
     this.showBalance();
-    
-
+  
   }
+  
   deleteExpense(element) {
     let id = parseInt(element.dataset.id);
     let parent = element.parentElement.parentElement.parentElement;
